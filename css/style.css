@@ -1,0 +1,224 @@
+:root {
+  --color-primary: #358ed7;
+  --color-secondary: #34495e;
+  --color-light: #f8f4f4;
+  --color-red: #f54b5e;
+  --color-green: #48d2a0;
+  --color-yellow: #f8c61c;
+  --color-white: #ffffff;
+  --color-labels: #858585;
+  --color-light-grey: #adafb2;
+  --color-grey: #79878e;
+  --opacity-disabled: 0.5;
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-h3: 40px;
+  --font-size-h4: 36px;
+  --font-size-h5: 24px;
+  --font-size-other: 14px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.header {
+  min-height: 12vh;
+  align-items: center;
+  background-color: rgb(212, 190, 224, 0.99);
+  display: flex;
+  box-shadow: 0 5px 2px -2px rgb(174, 143, 177, 0.8);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 1em 0;
+  padding: 0;
+}
+.navbar a {
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+}
+.navbar-inverse {
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+}
+.navbar-inverse .navbar-brand {
+  color: #999;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.navbar-right {
+  justify-content: flex-end;
+}
+#header-info {
+  margin-top: 12vh;
+  background-attachment: relative;
+  background-color: rgb(231, 220, 237, 0.4);
+  min-height: 88vh;
+  text-align: right;
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.header-info__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-info__img {
+  /* background: url("../assets/img/1920/smm-png-8.png") center center;
+  background-size: cover; */
+}
+.header-info__img img {
+  width: 100%;
+}
+.header-info__image {
+  width: 100%;
+}
+.header-info__button {
+  margin-top: 20px;
+}
+.header-info__titles {
+}
+.package-service {
+  padding: 10vh 25px;
+  min-height: 88vh;
+  align-items: center;
+  background-color: rgb(190, 223, 255, 0.4);
+}
+.package-service__h {
+  margin-bottom: 10vh;
+}
+.package-service__pack {
+  min-height: 50vh;
+  min-width: 250px;
+  width: 500px;
+  padding: 30px 20px;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+}
+.package-service__pack__h {
+  margin-bottom: 20px;
+}
+.package-service__pack li {
+  margin-bottom: 20px;
+}
+.package-service__pack p {
+  text-align: justify;
+  text-indent: 20px;
+}
+svg{
+  width:32px;
+  height:32px;
+}
+.package-service__row {
+  display: flex;
+  justify-content: space-around;
+}
+.main {
+  padding-top: 30px;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgb(190, 223, 255, 0.4);
+}
+.main__info {
+  font-size: 36px;
+}
+.main__methods {
+  margin-bottom: 20px;
+}
+.main__methods__photo {
+  width: 280px;
+  height: 210px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.main__methods__info {
+  display: inline-block;
+}
+.services {
+  padding-top: 30px;
+  min-height: 90vh;
+  background-color: rgb(136, 155, 211, 0.4);
+}
+.footer {
+  min-height: 15vh;
+  padding: 30px 40px;
+  color: #fff;
+  background-color: rgb(36, 48, 76, 0.9);
+}
+.footer__contacts {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 300px;
+}
+.footer__contacts__h {
+  margin-bottom: 20px;
+}
+.footer__contacts__p {
+  margin-bottom: 5px;
+}
+.footer__copyright {
+  float: right;
+}
+.footer__copyright__logo {
+  font-weight: bold;
+}
+.footer__copyright__li {
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer__copyright__li,
+.footer__copyright__a {
+  font-size: 12px;
+  color: #939ab1;
+}
+.archor-main {
+  position: absolute;
+  bottom: 12vh;
+}
+@media (min-width: 325px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+@media (min-width: 990px) {
+  h1 {
+    font-size: 56px;
+  }
+  #header-info {
+    text-align: left;
+  }
+}
+@media (min-width: 1390px) {
+  h1 {
+    font-size: 64px;
+  }
+}

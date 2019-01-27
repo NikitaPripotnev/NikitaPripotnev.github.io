@@ -1,1 +1,0 @@
-# NikitaPripotnev.github.io
