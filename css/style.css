@@ -38,7 +38,7 @@ h1 {
 
 .navbar a {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
@@ -201,17 +201,19 @@ svg {
 }
 .svg-telegram,
 .svg-instagram,
-.svg-vk {
-  width: 48px;
-  height: 48px;
+.svg-vk,
+.svg-whatsapp {
   fill: #fff;
   margin-right: 10px;
 }
-.svg-vk {
+.svg-whatsapp {
   margin-right: 0;
 }
 .svg-telegram:hover {
   fill: rgb(56, 181, 228, 1);
+}
+.svg-whatsapp:hover {
+  fill: #4fce5d;
 }
 .svg-vk:hover {
   fill: #597da3;
@@ -232,6 +234,9 @@ svg {
   .package-service__pack {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .navbar a {
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
@@ -259,6 +264,9 @@ svg {
   .package-service__pack {
     width: 330px;
     font-size: 18px;
+  }
+  .navbar a {
+    font-size: 20px;
   }
 }
 @media (min-width: 1300px) {
