@@ -99,6 +99,7 @@ h1 {
 }
 .package-service__pack {
   min-height: 50vh;
+  border-radius: 30px;
   min-width: 250px;
   width: 300px;
   padding: 30px 20px;
@@ -117,10 +118,7 @@ h1 {
   text-align: justify;
   text-indent: 20px;
 }
-svg {
-  width: 32px;
-  height: 32px;
-}
+
 .package-service__row {
   display: flex;
   justify-content: space-around;
@@ -162,7 +160,9 @@ svg {
 .footer__contacts {
   display: inline-block;
   vertical-align: bottom;
-  width: 300px;
+  max-width: 300px;
+  min-width: 240px;
+  margin-bottom: 10px;
 }
 .footer__contacts__h {
   margin-bottom: 20px;
@@ -170,11 +170,17 @@ svg {
 .footer__contacts__p {
   margin-bottom: 5px;
 }
+.footer__social {
+  margin-bottom: 20px;
+}
 .footer__copyright {
   float: right;
 }
 .footer__copyright__logo {
   font-weight: bold;
+}
+.footer__copyright__list {
+  padding-left: 0;
 }
 .footer__copyright__li {
   display: inline-block;
@@ -189,6 +195,31 @@ svg {
   position: absolute;
   bottom: 12vh;
 }
+svg {
+  width: 32px;
+  height: 32px;
+}
+.svg-telegram,
+.svg-instagram,
+.svg-vk {
+  width: 48px;
+  height: 48px;
+  fill: #fff;
+  margin-right: 10px;
+}
+.svg-vk {
+  margin-right: 0;
+}
+.svg-telegram:hover {
+  fill: rgb(56, 181, 228, 1);
+}
+.svg-vk:hover {
+  fill: #597da3;
+}
+.svg-instagram:hover {
+  fill: url(#my-cool-gradient2);
+}
+
 @media (min-width: 325px) {
   h1 {
     font-size: 28px;
