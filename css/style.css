@@ -63,7 +63,7 @@ h2 {
   width: 100%;
 }
 #logo {
-  width: 13%;
+  width: 30%;
 }
 .navbar-inverse .navbar-brand {
   color: #999;
@@ -297,6 +297,9 @@ svg {
   }
   #header-info {
     text-align: left;
+  }
+  #logo {
+    width: 13%;
   }
 }
 @media (min-width: 1100px) {
