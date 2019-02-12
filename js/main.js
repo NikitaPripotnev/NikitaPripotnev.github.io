@@ -2,7 +2,7 @@ import detectDevice from './device.js';
 import downloadData from './application-download.js';
 
 const galleryContainer = document.querySelector('.gallery__container');
-if (detectDevice()) {
+if (!detectDevice()) {
   const carousel = document.getElementById('carousel').content.cloneNode(true);
   const indicators = carousel.querySelector('.carousel-indicators');
   const photos = carousel.querySelector('.carousel-inner');
@@ -30,6 +30,7 @@ if (detectDevice()) {
       photos.appendChild(div);
     });
     galleryContainer.appendChild(carousel);
+    $('.carousel').bcSwipe({ threshold: 50 });
   });
 } else {
   downloadData('./API/gallery.json').then(function(gallery) {
